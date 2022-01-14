@@ -1,13 +1,16 @@
 package Smoke;
 
 import java.io.File;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -16,6 +19,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 import PageObj.AutomatonPractise;
+
 import Singlton.Singeltonclass;
 
 public class FunctionalTests {
@@ -31,6 +35,7 @@ public class FunctionalTests {
 
 	public static FileInputStream fis;
 	public static AutomatonPractise homepage;
+	public static Logger logger;
 
 	@BeforeClass
 	public static void setConfig() {
@@ -40,6 +45,7 @@ public class FunctionalTests {
 		// 3. get the instance of ExtentHtmlReporter
 		// 4. get the instance of ExtentReport
 
+		logger = Logger.getLogger(FunctionalTests.class);
 		System.out.println("before class is working here");
 
 		File file = new File(
@@ -84,6 +90,8 @@ public class FunctionalTests {
 		try {
 
 			Assert.assertEquals(actualTitle, prop.getProperty("homepage"));
+
+			logger.info("Application Successfully opened in browser");
 		}
 
 		catch (Exception e) {
@@ -100,6 +108,8 @@ public class FunctionalTests {
 		try {
 
 			homepage.getSignButton().click();
+			logger.info("Successfully clicked in sign button");
+
 		}
 
 		catch (Exception e) {
@@ -112,11 +122,13 @@ public class FunctionalTests {
 	@Test(description = "login to app", priority = 3)
 	public void loginToApp() {
 		homepage.getEmail().sendKeys("sagar");
+		logger.info("Entered username");
 		homepage.getPassword().sendKeys("sonawane");
+		logger.info("Entered password");
 
 	}
 
-	@Test(description = "close the browser", enabled = false)
+	@AfterTest(description = "close the browser", enabled = false)
 	public void tearDown() {
 
 		driver.quit();
