@@ -35,7 +35,7 @@ public class FunctionalTests {
 
 	public static FileInputStream fis;
 	public static AutomatonPractise homepage;
-	public static Logger logger;
+	private static Logger logger;
 
 	@BeforeClass
 	public static void setConfig() {

@@ -12,7 +12,8 @@
         <methods>
           <include name="loginToApp"/>
           <include name="setConfig"/>
-          <include name="clickOnSignButton"/>
+          <include name="tearDown"/>
+          <include name="launchApp"/>
         </methods>
       </class> <!-- Smoke.FunctionalTests -->
     </classes>

@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import EnvironmentVar.Constant;
 import PageObj.AutomatonPractise;
+import PageObj.FreeCrm;
 import Singlton.Singeltonclass;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
@@ -19,32 +20,36 @@ public class LoginTest {
 
 	public static WebDriverWait wait;
 
-	@Given("^navigate to application url$")
+	@Given("^navigate to applicatiom freeCrm$")
 	public void launhBrowser() {
 
 		driver = Singeltonclass.getChromeDriver("chrome");
-		driver.get(Constant.url);
+		driver.get(Constant.crmUrl);
+		driver.manage().window().maximize();
 
 	}
 
-	@When("^ $")
-	public void openUrl(String uname, String pass) {
-
+	@When("^enter valid credentials(.*) and password(.*)$")
+	public void login(String uname, String pass) {
 		// List<List<String>> testdata = data.cells();
-
 		wait = new WebDriverWait(driver, 10);
+		// this is kind of fluent patten in design
+		FreeCrm crm = new FreeCrm(driver);
+		if (crm.getUserName().isDisplayed()) {
+			crm.getUserName().sendKeys(uname);
 
-		driver.manage().window().maximize(); // this is kind of fluent patten in design
+		}
 
-		AutomatonPractise ap = new AutomatonPractise(driver);
-		ap.getSignButton().click();
-		ap.getEmail().sendKeys(uname);
-		ap.getPassword().sendKeys(pass);
+		if (crm.getUserPassword().isDisplayed()) {
+
+			crm.getUserPassword().sendKeys(pass);
+
+		}
 
 	}
 
 	@Then("^user should be on homepage of application$")
-	public void login() {
+	public void VerifyTitle() {
 
 		System.out.println(driver.getTitle());
 
