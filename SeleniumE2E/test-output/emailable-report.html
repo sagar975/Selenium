@@ -9,13 +9,40 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">practise</th></tr>
-<tr><td><a href="#t0">smoketest</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">27,435</td><td></td><td></td></tr>
+<tr><td><a href="#t0">smoketest</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">42,623</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">practise</th></tr></tbody><tbody id="t0"><tr><th colspan="4">smoketest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">Smoke.FunctionalTests</td><td><a href="#m0">clickOnSignButton</a></td><td rowspan="1">1642149906155</td><td rowspan="1">3981</td></tr><tr class="passedeven"><td><a href="#m1">launchApp</a></td><td rowspan="1">1642149898091</td><td rowspan="1">7838</td></tr><tr class="passedeven"><td><a href="#m2">loginToApp</a></td><td rowspan="1">1642149910369</td><td rowspan="1">320</td></tr><tr class="passedodd"><td rowspan="1">pack2.Failureoperation</td><td><a href="#m3">test</a></td><td rowspan="1">1642149883717</td><td rowspan="1">9</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">practise</th></tr></tbody><tbody id="t0"><tr><th colspan="4">smoketest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">Smoke.FunctionalTests</td><td><a href="#m0">launchApp</a></td><td rowspan="1">1643130863332</td><td rowspan="1">2986</td></tr><tr class="failedeven"><td><a href="#m1">loginToApp</a></td><td rowspan="1">1643130872161</td><td rowspan="1">5013</td></tr><tr><th colspan="4">smoketest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Smoke.FunctionalTests</td><td><a href="#m2">clickOnSignButton</a></td><td rowspan="1">1643130866643</td><td rowspan="1">5129</td></tr><tr class="passedodd"><td rowspan="1">pack2.Failureoperation</td><td><a href="#m3">test</a></td><td rowspan="1">1643130835167</td><td rowspan="1">8</td></tr></tbody>
 </table>
-<h2>smoketest</h2><h3 id="m0">Smoke.FunctionalTests#clickOnSignButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Smoke.FunctionalTests#launchApp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">Smoke.FunctionalTests#loginToApp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>smoketest</h2><h3 id="m0">Smoke.FunctionalTests#launchApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [My Store] but found [automationpractice.com]
+	at Smoke.FunctionalTests.launchApp(FunctionalTests.java:92)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Smoke.FunctionalTests#loginToApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;a.login&quot;}
+  (Session info: chrome=97.0.4692.71)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0-beta-4&apos;, revision: &apos;29f46d02dd&apos;
+System info: host: &apos;DESKTOP-74PA3RG&apos;, ip: &apos;192.168.1.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3fb35b408bf201de56f0b69457876a1e, findElement {using=css selector, value=a.login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\sagar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49980}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49980/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3fb35b408bf201de56f0b69457876a1e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:162)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:137)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:612)
+	at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1251)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy18.sendKeys(Unknown Source)
+	at Smoke.FunctionalTests.loginToApp(FunctionalTests.java:124)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Smoke.FunctionalTests#clickOnSignButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">pack2.Failureoperation#test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
