@@ -11,6 +11,8 @@ import org.openqa.selenium.io.FileHandler;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -24,10 +26,8 @@ public class Failureoperation implements ITestListener {
 	public static ExtentHtmlReporter reporter;
 	public static ExtentReports extent;
 
-	@BeforeClass
-	public void initializeExtentReport() {
-
-		System.out.println("failure operation is working fine");
+	@BeforeTest
+	public static void initializeExtentReport() {
 
 		reporter = new ExtentHtmlReporter("E://sagar//ExtentReport//result.html");
 		extent = new ExtentReports();
@@ -65,11 +65,6 @@ public class Failureoperation implements ITestListener {
 		logger.log(Status.PASS, result.getName() + " " + "is Passed");
 
 		extent.flush();
-
-	}
-
-	@Test(description = "no content")
-	public void test() {
 
 	}
 

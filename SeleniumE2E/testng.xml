@@ -1,31 +1,24 @@
-<?x
-
-ml version="1.0" encoding="UTF-8"?>
+<?x ml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="practise">
 
-	<parameter name="username"
-		value="sagarsonawane1991@gmail.com" />
-	<parameter name="password" value="Kms60$" />
+	<parameter name="browsername" value="chrome" />
 
 	<listeners>
 		<listener class-name="pack2.Failureoperation" />
 	</listeners>
 
-
-	<test name="smoketest">
+	<test name="LoginToApp">
 
 		<classes>
-			<class name="pack2.Failureoperation"></class>
-			<class name="Smoke.FunctionalTests"></class>
+
+			<class name="com.automationpractise.tests.BaseClass" />
+			<class name="com.automationpractise.tests.TC_LoginTest_001" />
+			<class name="pack2.Failureoperation" />
 		</classes>
+
 
 	</test>
 
 	<!-- Test -->
 </suite> <!-- Suite -->
-
-
-
-
-

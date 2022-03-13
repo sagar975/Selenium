@@ -8,5 +8,6 @@ public class Constant {
 	public static String password = "sagar111222";
 	public static String goibibo = "https://www.goibibo.com/";
 	public static String crmUrl = "https://ui.cogmento.com/";
+    public static String openCartUrl="https://www.opencart.com/index.php?route=common/home";
 
 }

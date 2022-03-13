@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [practise]">
-  <parameter name="password" value="Kms60$"/>
-  <parameter name="username" value="sagarsonawane1991@gmail.com"/>
-  <listeners>
-    <listener class-name="pack2.Failureoperation"/>
-  </listeners>
-  <test thread-count="5" name="smoketest(failed)">
+<suite name="Failed suite [Failed suite [Default suite]]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)(failed)">
     <classes>
-      <class name="Smoke.FunctionalTests">
+      <class name="com.automationpractise.tests.TC_LoginTest_001">
         <methods>
-          <include name="loginToApp"/>
-          <include name="setConfig"/>
-          <include name="tearDown"/>
-          <include name="launchApp"/>
+          <include name="closeBrowser"/>
+          <include name="loginToApplication"/>
+          <include name="setUp"/>
+          <include name="initializeLoginPage"/>
         </methods>
-      </class> <!-- Smoke.FunctionalTests -->
+      </class> <!-- com.automationpractise.tests.TC_LoginTest_001 -->
     </classes>
-  </test> <!-- smoketest(failed) -->
-</suite> <!-- Failed suite [practise] -->
+  </test> <!-- Default test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Default suite]] -->

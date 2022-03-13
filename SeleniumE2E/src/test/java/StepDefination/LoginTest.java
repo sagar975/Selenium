@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import EnvironmentVar.Constant;
 import PageObj.AutomatonPractise;
-import PageObj.FreeCrm;
+import PageObj.OpenCart;
 import Singlton.Singeltonclass;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
@@ -24,7 +24,7 @@ public class LoginTest {
 	public void launhBrowser() {
 
 		driver = Singeltonclass.getChromeDriver("chrome");
-		driver.get(Constant.crmUrl);
+		driver.get(Constant.openCartUrl);
 		driver.manage().window().maximize();
 
 	}
@@ -34,17 +34,28 @@ public class LoginTest {
 		// List<List<String>> testdata = data.cells();
 		wait = new WebDriverWait(driver, 10);
 		// this is kind of fluent patten in design
-		FreeCrm crm = new FreeCrm(driver);
-		if (crm.getUserName().isDisplayed()) {
-			crm.getUserName().sendKeys(uname);
+		// FreeCrm crm = new FreeCrm(driver);
 
-		}
+		OpenCart page = new OpenCart(driver);
+		page.getLoginLink().click();
+		page.getUserName().sendKeys(uname);
+		page.getPassword().sendKeys(pass);
 
-		if (crm.getUserPassword().isDisplayed()) {
-
-			crm.getUserPassword().sendKeys(pass);
-
-		}
+		System.out.println(uname);
+		System.out.println(pass);
+		/*
+		 * if (crm.getUserName().isDisplayed()) { crm.getUserName().sendKeys(uname);
+		 * 
+		 * }
+		 * 
+		 * if (crm.getUserPassword().isDisplayed()) {
+		 * 
+		 * crm.getUserPassword().sendKeys(pass);
+		 * 
+		 * }
+		 * 
+		 * 
+		 */
 
 	}
 
@@ -52,6 +63,7 @@ public class LoginTest {
 	public void VerifyTitle() {
 
 		System.out.println(driver.getTitle());
+		driver.quit();
 
 	}
 

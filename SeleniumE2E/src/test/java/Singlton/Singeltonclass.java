@@ -18,7 +18,7 @@ public class Singeltonclass {
 
 			if (driver == null && browsername.equalsIgnoreCase("chrome")) {
 
-				System.setProperty("webdriver.chrome.driver", "C:\\Users\\sagar\\Seleniumdriver\\chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", "C:\\ChromeDriver\\chromedriver.exe");
 
 				driver = new ChromeDriver();
 
@@ -28,7 +28,7 @@ public class Singeltonclass {
 
 			else if (driver == null && browsername.equalsIgnoreCase("ie")) {
 
-				System.setProperty("webdriver.ie.driver", "C:\\Users\\sagar\\Iedriver\\IEDriverServer.exe");
+				System.setProperty("webdriver.ie.driver", "C:\\ChromeDriver\\chromedriver.exe");
 
 				driver = new InternetExplorerDriver();
 				driver.get("http://automationpractice.com/index.php");
@@ -49,7 +49,7 @@ public class Singeltonclass {
 
 	public static WebDriver getChromeDriver(String browsername) {
 
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sagar\\Seleniumdriver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\ChromeDriver\\chromedriver.exe");
 
 		return new ChromeDriver();
 

@@ -22,6 +22,7 @@ import Singlton.Singeltonclass;
 import java.util.*;
 
 public class Brokenlinks extends Base2 {
+	WebElement ele;
 
 	public static WebDriver driver;
 
