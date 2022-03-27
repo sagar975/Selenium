@@ -1,3 +1,74 @@
-2022-03-06 06:50:16,628  INFO [main] AutomationPractise:32 - chromedriver instance is created
-2022-03-06 06:50:43,033  INFO [main] AutomationPractise:31 - username is entered
-2022-03-06 06:50:43,208  INFO [main] AutomationPractise:33 - password is entered
+2022-03-20 08:31:05,990  INFO [main] AutomationPractise:32 - chromedriver instance is created
+2022-03-20 08:31:17,170  INFO [main] AutomationPractise:37 - username is entered
+2022-03-20 08:31:17,310 ERROR [main] AutomationPractise:39 - crashed
+2022-03-20 08:31:19,714  INFO [main] AutomationPractise:41 - submit button is clicked
+2022-03-20 08:31:20,783  INFO [main] AutomationPractise:53 - browser is closed
+2022-03-26 02:51:35,225  INFO [main] AutomationPractise:32 - chromedriver instance is created
+2022-03-26 02:51:50,432  INFO [main] AutomationPractise:37 - username is entered
+2022-03-26 02:51:50,579 ERROR [main] AutomationPractise:39 - crashed
+2022-03-26 02:51:55,665  INFO [main] AutomationPractise:41 - submit button is clicked
+2022-03-26 02:51:57,111  INFO [main] AutomationPractise:53 - browser is closed
+2022-03-26 02:52:54,068  INFO [main] AutomationPractise:32 - chromedriver instance is created
+2022-03-26 02:53:02,732  INFO [main] AutomationPractise:37 - username is entered
+2022-03-26 02:53:02,860 ERROR [main] AutomationPractise:39 - crashed
+2022-03-26 02:53:04,654  INFO [main] AutomationPractise:41 - submit button is clicked
+2022-03-26 07:08:59,499  INFO [main] AutomationPractise:32 - chromedriver instance is created
+2022-03-26 07:09:10,580  INFO [main] AutomationPractise:37 - username is entered
+2022-03-26 07:09:10,744 ERROR [main] AutomationPractise:39 - crashed
+2022-03-26 07:09:14,227  INFO [main] AutomationPractise:41 - submit button is clicked
+2022-03-26 07:09:18,127  INFO [main] AutomationPractise:32 - chromedriver instance is created
+2022-03-26 07:09:28,623  INFO [main] AutomationPractise:37 - username is entered
+2022-03-26 07:09:28,775 ERROR [main] AutomationPractise:39 - crashed
+2022-03-26 07:09:30,940  INFO [main] AutomationPractise:41 - submit button is clicked
+2022-03-26 07:13:25,624  INFO [main] AutomationPractise:32 - chromedriver instance is created
+2022-03-26 07:13:34,498  INFO [main] AutomationPractise:37 - username is entered
+2022-03-26 07:13:34,632 ERROR [main] AutomationPractise:39 - crashed
+2022-03-26 07:13:36,546  INFO [main] AutomationPractise:41 - submit button is clicked
+2022-03-26 10:22:22,328  INFO [main] AutomationPractise:32 - chromedriver instance is created
+2022-03-26 10:22:42,941  INFO [main] AutomationPractise:37 - username is entered
+2022-03-26 10:22:43,078 ERROR [main] AutomationPractise:39 - crashed
+2022-03-26 10:22:46,077  INFO [main] AutomationPractise:41 - submit button is clicked
+2022-03-26 10:36:09,897  INFO [main] AutomationPractise:32 - chromedriver instance is created
+2022-03-26 10:36:20,622  INFO [main] AutomationPractise:37 - username is entered
+2022-03-26 10:36:20,770 ERROR [main] AutomationPractise:39 - crashed
+2022-03-26 10:36:25,849  INFO [main] AutomationPractise:41 - submit button is clicked
+2022-03-26 10:36:29,344  INFO [main] AutomationPractise:32 - chromedriver instance is created
+2022-03-26 23:04:46,689  INFO [main] AutomationPractise:33 - chromedriver instance is created
+2022-03-26 23:11:19,366  INFO [main] AutomationPractise:33 - chromedriver instance is created
+2022-03-26 23:18:52,680  INFO [main] AutomationPractise:33 - chromedriver instance is created
+2022-03-26 23:40:44,478  INFO [main] AutomationPractise:33 - chromedriver instance is created
+2022-03-26 23:42:47,760  INFO [main] AutomationPractise:33 - chromedriver instance is created
+2022-03-26 23:55:27,385  INFO [main] AutomationPractise:33 - chromedriver instance is created
+2022-03-26 23:55:38,125  INFO [main] AutomationPractise:38 - username is entered
+2022-03-26 23:55:38,305 ERROR [main] AutomationPractise:40 - crashed
+2022-03-26 23:55:40,212  INFO [main] AutomationPractise:42 - submit button is clicked
+2022-03-26 23:55:48,401  INFO [main] AutomationPractise:33 - chromedriver instance is created
+2022-03-26 23:55:58,063  INFO [main] AutomationPractise:38 - username is entered
+2022-03-26 23:55:58,222 ERROR [main] AutomationPractise:40 - crashed
+2022-03-26 23:56:00,003  INFO [main] AutomationPractise:42 - submit button is clicked
+2022-03-27 00:02:01,453  INFO [main] AutomationPractise:33 - chromedriver instance is created
+2022-03-27 00:02:10,292  INFO [main] AutomationPractise:38 - username is entered
+2022-03-27 00:02:10,433 ERROR [main] AutomationPractise:40 - crashed
+2022-03-27 00:02:12,299  INFO [main] AutomationPractise:42 - submit button is clicked
+2022-03-27 00:02:14,835  INFO [main] AutomationPractise:33 - chromedriver instance is created
+2022-03-27 00:02:30,814  INFO [main] AutomationPractise:38 - username is entered
+2022-03-27 00:02:30,974 ERROR [main] AutomationPractise:40 - crashed
+2022-03-27 00:02:34,915  INFO [main] AutomationPractise:42 - submit button is clicked
+2022-03-27 00:57:28,212  INFO [main] AutomationPractise:33 - chromedriver instance is created
+2022-03-27 00:57:40,496  INFO [main] AutomationPractise:38 - username is entered
+2022-03-27 00:57:40,641 ERROR [main] AutomationPractise:40 - crashed
+2022-03-27 00:57:43,438  INFO [main] AutomationPractise:42 - submit button is clicked
+2022-03-27 01:09:00,694  INFO [main] AutomationPractise:33 - chromedriver instance is created
+2022-03-27 01:09:10,477  INFO [main] AutomationPractise:38 - username is entered
+2022-03-27 01:09:10,619 ERROR [main] AutomationPractise:40 - crashed
+2022-03-27 01:09:12,784  INFO [main] AutomationPractise:42 - submit button is clicked
+2022-03-27 01:09:17,768  INFO [main] AutomationPractise:54 - browser is closed
+2022-03-27 02:04:17,249  INFO [main] AutomationPractise:33 - chromedriver instance is created
+2022-03-27 02:04:28,060  INFO [main] AutomationPractise:38 - username is entered
+2022-03-27 02:04:28,184 ERROR [main] AutomationPractise:40 - crashed
+2022-03-27 02:04:31,040  INFO [main] AutomationPractise:42 - submit button is clicked
+2022-03-27 02:04:32,613  INFO [main] AutomationPractise:54 - browser is closed
+2022-03-27 02:05:04,124  INFO [main] AutomationPractise:33 - chromedriver instance is created
+2022-03-27 02:05:20,066  INFO [main] AutomationPractise:38 - username is entered
+2022-03-27 02:05:20,216 ERROR [main] AutomationPractise:40 - crashed
+2022-03-27 02:05:21,823  INFO [main] AutomationPractise:42 - submit button is clicked
