@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import com.automationpractise.utilities.ReadConfig;
@@ -19,7 +20,7 @@ public abstract class BaseClass {
 
 	@Parameters("browsername")
 	@BeforeClass
-	public static void setUp(String browserName) {
+	public static void setUp(@Optional("chrome") String browserName) {
 		logger = Logger.getLogger("AutomationPractise"); // get Logger instance
 		PropertyConfigurator.configure("Log4j.properties");
 		read = new ReadConfig(); // read properties in base class
@@ -47,9 +48,10 @@ public abstract class BaseClass {
 
 	}
 
-	@AfterTest
+	@AfterTest(enabled = false)
 	public void closeBrowser() {
 		driver.quit();
+		logger.info("browser is closed");
 
 	}
 

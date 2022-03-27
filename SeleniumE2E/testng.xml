@@ -8,17 +8,31 @@
 		<listener class-name="pack2.Failureoperation" />
 	</listeners>
 
+
+	<!-- 
 	<test name="LoginToApp">
 
 		<classes>
 
+
 			<class name="com.automationpractise.tests.BaseClass" />
 			<class name="com.automationpractise.tests.TC_LoginTest_001" />
 			<class name="pack2.Failureoperation" />
+
 		</classes>
 
+	</test>
+-->
+	<test name="SearchCustomer">
+		<classes>
+
+			<class name="com.automationpractise.tests.TC_SearchProduct_002" />
+			<class name="pack2.Failureoperation" />
+
+		</classes>
 
 	</test>
+
 
 	<!-- Test -->
 </suite> <!-- Suite -->

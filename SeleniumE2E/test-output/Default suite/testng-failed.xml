@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.automationpractise.tests.TC_LoginTest_001">
+      <class name="com.automationpractise.tests.TC_SearchProduct_002">
         <methods>
-          <include name="loginToApplication"/>
+          <include name="closeBrowser"/>
+          <include name="searchProduct"/>
+          <include name="initializeHomePage"/>
           <include name="setUp"/>
-          <include name="initializeLoginPage"/>
         </methods>
-      </class> <!-- com.automationpractise.tests.TC_LoginTest_001 -->
+      </class> <!-- com.automationpractise.tests.TC_SearchProduct_002 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

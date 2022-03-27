@@ -29,6 +29,7 @@ public class AutomatonPractise {
 
 	@FindBy(id = "passwd")
 	private WebElement password;
+	
 
 	@FindBy(id = "SubmitLogin")
 	private WebElement submit;

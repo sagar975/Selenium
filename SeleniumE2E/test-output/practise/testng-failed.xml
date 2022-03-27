@@ -5,15 +5,16 @@
   <listeners>
     <listener class-name="pack2.Failureoperation"/>
   </listeners>
-  <test thread-count="5" name="LoginToApp(failed)">
+  <test thread-count="5" name="SearchCustomer(failed)">
     <classes>
-      <class name="com.automationpractise.tests.TC_LoginTest_001">
+      <class name="com.automationpractise.tests.TC_SearchProduct_002">
         <methods>
-          <include name="loginToApplication"/>
+          <include name="closeBrowser"/>
+          <include name="searchProduct"/>
+          <include name="initializeHomePage"/>
           <include name="setUp"/>
-          <include name="initializeLoginPage"/>
         </methods>
-      </class> <!-- com.automationpractise.tests.TC_LoginTest_001 -->
+      </class> <!-- com.automationpractise.tests.TC_SearchProduct_002 -->
     </classes>
-  </test> <!-- LoginToApp(failed) -->
+  </test> <!-- SearchCustomer(failed) -->
 </suite> <!-- Failed suite [practise] -->

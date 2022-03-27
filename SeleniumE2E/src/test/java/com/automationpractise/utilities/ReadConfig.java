@@ -54,4 +54,9 @@ public class ReadConfig {
 		return prop.getProperty("password");
 	}
 
+	public String getProduct() {
+
+		return prop.getProperty("productSearch");
+	}
+
 }
