@@ -30,7 +30,7 @@ public class MultipleLogin {
 
 		driver.get("http://automationpractice.com/index.php");
 
-		wait = new WebDriverWait(driver, 25);
+		//wait = new WebDriverWait(driver, 25);
 
 		AutomatonPractise ob = new AutomatonPractise(driver);
 

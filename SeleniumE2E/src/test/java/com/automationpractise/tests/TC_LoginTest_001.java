@@ -19,7 +19,6 @@ public class TC_LoginTest_001 extends BaseClass {
 
 	@BeforeClass
 	public static void initializeLoginPage() {
-		wait = new WebDriverWait(driver, 10);
 
 		loginPage = new AutomatonPractise(driver);
 
@@ -40,7 +39,6 @@ public class TC_LoginTest_001 extends BaseClass {
 		logger.error("crashed");
 		loginPage.getSignButton().click();
 		logger.info("submit button is clicked");
-		
 
 		System.out.println("Logged in Successfully");
 

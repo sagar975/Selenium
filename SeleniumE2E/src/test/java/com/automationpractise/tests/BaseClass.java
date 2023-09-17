@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 import com.automationpractise.utilities.ReadConfig;
 
@@ -18,20 +19,35 @@ public abstract class BaseClass {
 	protected static Logger logger;
 	protected static ReadConfig read;
 
-	@Parameters("browsername")
-	@BeforeClass
-	public static void setUp(@Optional("chrome") String browserName) {
+	@BeforeSuite
+	public void getRequiredInstance() {
 		logger = Logger.getLogger("AutomationPractise"); // get Logger instance
 		PropertyConfigurator.configure("Log4j.properties");
-		read = new ReadConfig(); // read properties in base class
-
+		read = new ReadConfig();
 		System.setProperty("webdriver.chrome.driver", "C:\\ChromeDriver\\chromedriver.exe");
+	}
+
+	@Test
+	public void foooo() {
+
+		System.out.println("public void fooo");
+
+	}
+
+	@Parameters("browsername")
+	@Test
+	public static void setUp(@Optional("chrome") String browserName) {
+		// logger = Logger.getLogger("AutomationPractise"); // get Logger instance
+		// PropertyConfigurator.configure("Log4j.properties");
+		// read = new ReadConfig(); // read properties in base class
 
 		if (browserName.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\ChromeDriver\\chromedriver.exe");
+			// System.setProperty("webdriver.chrome.driver",
+			// "C:\\ChromeDriver\\chromedriver.exe");
 			driver = new ChromeDriver();
 			logger.info("chromedriver instance is created");
 			driver.manage().window().maximize();
+			driver.get("https://www.google.com/");
 			return;
 
 		} else if (browserName.equals("firefox")) {
