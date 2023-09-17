@@ -6,10 +6,10 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-public class ReadConfig {
+public  class ReadConfig {
 
-	public static Properties prop;
-	public static FileInputStream file;
+	protected static Properties prop;
+	protected static FileInputStream file;
 
 	public ReadConfig() {
 

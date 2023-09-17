@@ -53,7 +53,7 @@ public class DropDownTest extends Base2 {
 
 		WebElement close_button2 = driver.findElement(By.className("sendx-modal-close-dNnOns5gBj56SFGkOimE4p"));
 
-		wait = new WebDriverWait(driver, 15);
+		//wait = new WebDriverWait(driver, 15);
 
 		wait.until(ExpectedConditions.visibilityOf(close_button2));
 
@@ -74,7 +74,7 @@ public class DropDownTest extends Base2 {
 
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 
-		wait = new WebDriverWait(driver, 30);
+	//	wait = new WebDriverWait(driver, 30);
 
 		wait.until(ExpectedConditions.visibilityOf(close_button2));
 
