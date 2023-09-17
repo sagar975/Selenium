@@ -32,7 +32,7 @@ public class LoginTest {
 	@When("^enter valid credentials(.*) and password(.*)$")
 	public void login(String uname, String pass) {
 		// List<List<String>> testdata = data.cells();
-		wait = new WebDriverWait(driver, 10);
+
 		// this is kind of fluent patten in design
 		// FreeCrm crm = new FreeCrm(driver);
 

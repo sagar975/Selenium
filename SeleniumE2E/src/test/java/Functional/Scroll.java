@@ -15,20 +15,10 @@ public class Scroll extends Base2 {
 	public static void scrollDown(WebElement element) {
 
 		js = (JavascriptExecutor) driver;
-		wait = new WebDriverWait(driver, 20);
-		wait.until(ExpectedConditions.visibilityOf(element));
+		// wait = new WebDriverWait(driver, 20);
+		// wait.until(ExpectedConditions.visibilityOf(element));
 		js.executeScript("arguments[0].scrollIntoView();", element);
 
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
 }
