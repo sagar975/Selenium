@@ -44,6 +44,11 @@ public class SeleniumWebDriverFactory {
 
 	}
 
+	public static WebDriver createInstance() throws MalformedURLException {
+
+		return createInstance(null);
+	}
+
 	public static WebDriver createInstance(WebDriverOptions webDriverOptions) throws MalformedURLException {
 		webDriverOptions = loadWebDriverOptions(webDriverOptions);
 		WebDriver driver = null;
