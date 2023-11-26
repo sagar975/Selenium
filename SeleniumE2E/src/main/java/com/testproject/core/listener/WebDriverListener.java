@@ -20,7 +20,8 @@ import com.testproject.core.automation.AutomationContextManager;
 import com.testproject.core.dataops.FileIO;
 import com.testproject.core.utils.ClasspathUtils;
 
-public class WebDriverListener implements WebDriverEventListener, ITestListener, IExecutionListener ,IInvokedMethodListener{
+public class WebDriverListener
+		implements WebDriverEventListener, ITestListener, IExecutionListener, IInvokedMethodListener {
 
 	private static final Logger logger = Logger.getLogger(WebDriverListener.class);
 
@@ -192,7 +193,7 @@ public class WebDriverListener implements WebDriverEventListener, ITestListener,
 		try {
 
 			environment = System.getProperty("Environment");
-			if (environment == null || environment.isBlank()) {
+			if (environment == null || environment.isBlank() || environment.isEmpty()) {
 				throw new RuntimeException("system property environemnt is not set canot continue");
 			}
 			String propsFile = ClasspathUtils.loadFileFromClassPathAsString(environment.toLowerCase());
@@ -213,7 +214,7 @@ public class WebDriverListener implements WebDriverEventListener, ITestListener,
 		ExtentReports extentReports = new ExtentReports();
 		extentReports.attachReporter(htmlReporter);
 		AutomationContextManager.setExtentReport(extentReports);
-		
+
 	}
 
 }

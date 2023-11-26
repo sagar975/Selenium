@@ -10,10 +10,10 @@ public class TestCoreFrameWork extends TestProjectAbstractSeleniumTest {
 
 	private static final Logger logger = Logger.getLogger(TestCoreFrameWork.class);
 
-	@Test(enabled = true, description = "this is test project")
-	public void testFrameworkChanges() {
+	@Test(enabled = true, description = "this is test project",dataProvider = "CSVDataProvider")
+	public void testFrameworkChanges(String tetsName,String LoginName) {
 
-		logger.info("coreframework worked");
+		System.out.println("lets print details :  "  + tetsName);
 
 	}
 
